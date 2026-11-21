@@ -25,11 +25,11 @@ function rc-cache() {
       rm -rf "$CACHE_HOME"
       ;;
 
-    *) echo "usage:"
-        echo "  rc-cache clear"
-        echo "  rc-cache src prog [args ...]"
-        echo "    where 'prog [args ...]' generates a hook to be sourced in zshrc"
-        return 1
+    *)
+      echo "usage:"
+      echo "  rc-cache clear"
+      echo "  rc-cache src prog [args ...]"
+      echo "    where 'prog [args ...]' generates a hook to be sourced in zshrc"
       ;;
   esac
 }
